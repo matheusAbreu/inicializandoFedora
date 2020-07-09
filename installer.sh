@@ -40,6 +40,9 @@ dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 echo 'Instalando programas via dnf';
 dnf install -yq telegram-desktop code postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
+echo 'Instalando Extensões do Gnome';
+dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
+
 echo 'Startando o postgres';
 systemctl enable postgresql;
 systemctl start postgresql;
