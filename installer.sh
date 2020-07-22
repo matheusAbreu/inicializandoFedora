@@ -1,11 +1,11 @@
 #!/bin/bash
 
-dnf install wget -yq;
+dnf install -yq wget flatpak ;
 
 #add repos
 echo 'Adicionando repositorios...';
 #postgress
-dnf install -yq https://download.postgresql.org/pub/repos/yum/reporpms/F-31-x86_64/pgdg-fedora-repo-latest.noarch.rpm;
+dnf install -yq https://download.postgresql.org/pub/repos/yum/reporpms/F-$(rpm -E %fedora)-x86_64/pgdg-fedora-repo-latest.noarch.rpm;
 
 #rpm fusion
 dnf install -yq https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm;
@@ -25,7 +25,6 @@ dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo;
 dnf upgrade -yq;
 
 #add flatpak repo
-sudo dnf install -yq flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo;
 
 #install programs
@@ -38,7 +37,7 @@ echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -yq telegram-desktop code postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
+dnf install -yq telegram-desktop code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
 dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
