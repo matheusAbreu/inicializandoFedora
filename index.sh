@@ -23,9 +23,14 @@ export BASH_IT="/home/'$USER'/.bash-it"\n
 export JAVA_HOME='$(readlink -f /usr/bin/java | sed "s:bin/java::")'\n
 \n
 #default instalation path\n
-export ANDROID_SDK_HOME=/home/'$USER'/.android\n
-export ANDROID_AVD_HOME=/home/'$USER'/.android/avd/\n
-export ANDROID_SDK_ROOT=/home/'$USER'/Android/Sdk/\n
+export ANDROID_SDK_HOME=/home/abreu/.android\n
+export ANDROID_AVD_HOME=/home/abreu/.android/avd\n
+export ANDROID_HOME=/home/abreu/Android/Sdk\n
+ \n
+export PATH=$PATH:$ANDROID_HOME/emulator\n
+export PATH=$PATH:$ANDROID_HOME/tools\n
+export PATH=$PATH:$ANDROID_HOME/tools/bin\n
+export PATH=$PATH:$ANDROID_HOME/platform-tools\n
 \n
 export PATH=$PATH:$JAVA_HOME/bin\n
 export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar\n
