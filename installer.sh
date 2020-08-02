@@ -37,7 +37,7 @@ echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -yq telegram-desktop code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
+dnf install -yq telegram-desktop transmission-gtk code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
 dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
@@ -78,7 +78,7 @@ wget -c https://mega.nz/linux/MEGAsync/Fedora_$(rpm -E %fedora)/x86_64/nautilus-
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm;
 
 echo 'Instalando Mega e Google Chrome... ';
-dnf install -yq megasync-Fedora_$(rpm -E %fedora).x86_64.rpm nemo-megasync-Fedora_$(rpm -E %fedora).x86_64.rpm google-chrome-stable_current_x86_64.rpm; 
+dnf install -yq megasync-Fedora_$(rpm -E %fedora).x86_64.rpm nautilus-megasync-Fedora_$(rpm -E %fedora).x86_64.rpm google-chrome-stable_current_x86_64.rpm; 
 
 
 echo 'Fim do Script Instalação ...';
