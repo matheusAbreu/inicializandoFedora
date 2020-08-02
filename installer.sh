@@ -37,7 +37,7 @@ echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -yq telegram-desktop transmission-gtk code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
+dnf install -yq transmission-gtk paper-icon-theme papirus-icon-theme code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
 dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
@@ -66,6 +66,8 @@ flatpak install -y flathub com.discordapp.Discord --noninteractive;
 flatpak install -y flathub com.wps.Office --noninteractive;
 
 flatpak install -y flathub com.google.AndroidStudio --noninteractive;
+
+flatpak install -y flathub org.telegram.desktop --noninteractive;
 
 flatpak install -y flathub io.dbeaver.DBeaverCommunity --noninteractive;
 flatpak install -y flathub io.dbeaver.DBeaverCommunity.Client.pgsql --noninteractive;
