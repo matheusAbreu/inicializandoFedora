@@ -19,13 +19,13 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 rpm --import https://packages.microsoft.com/keys/microsoft.asc;
 sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo';
 
-#nvidia(negative 17)
-#dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo;
-
 dnf upgrade -yq;
 
 #add flatpak repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo;
+
+#nvidia(negative 17)
+#dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo;
 
 #install programs
 
@@ -37,7 +37,7 @@ echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -yq transmission-gtk paper-icon-theme papirus-icon-theme code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
+dnf install -yq transmission-gtk paper-icon-theme neofetch papirus-icon-theme code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
 dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
