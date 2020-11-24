@@ -40,7 +40,7 @@ echo 'Instalando programas via dnf';
 dnf install -yq transmission-gtk paper-icon-theme neofetch unrar unzip papirus-icon-theme code rabbitvcs-nautilus postgresql-server postgresql-contrib java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin3 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
-dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-media-player-indicator gnome-shell-extension-topicons-plus gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
+dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-media-player-indicator gnome-shell-extension-gamemode gnome-shell-extension-user-theme;
 
 echo 'Startando o postgres';
 systemctl enable postgresql;
