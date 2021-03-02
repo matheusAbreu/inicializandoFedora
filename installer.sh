@@ -69,6 +69,8 @@ flatpak install -y flathub com.google.AndroidStudio --noninteractive;
 
 flatpak install -y flathub org.telegram.desktop --noninteractive;
 
+flatpak install -y flathub com.simplenote.Simplenote --noninteractive;
+
 flatpak install -y flathub io.dbeaver.DBeaverCommunity --noninteractive;
 flatpak install -y flathub io.dbeaver.DBeaverCommunity.Client.pgsql --noninteractive;
 
