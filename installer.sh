@@ -37,10 +37,10 @@ echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -yq transmission-gtk paper-icon-theme neofetch unrar 
-                unzip papirus-icon-theme code rabbitvcs-nautilus postgresql-server postgresql-contrib 
-                java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme 
-                flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin4 pgadmin4-desktop 
+dnf install -yq transmission-gtk paper-icon-theme neofetch unrar \
+                unzip papirus-icon-theme code podman buildah rabbitvcs-nautilus postgresql-server postgresql-contrib \
+                java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme \
+                flat-remix-*-theme system-config-language sublime-text numlockx krita pgadmin4-desktop \
                 vlc* gimp blender npm golang steam*;
 
 echo 'Instalando Extensões do Gnome';
