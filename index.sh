@@ -82,6 +82,7 @@ code --install-extension ms-python.python;
 code --install-extension vscode-icons-team.vscode-icons;
 code --install-extension naumovs.color-highlight;
 code --install-extension jpoissonnier.vscode-styled-components;
+code --install-extension rangav.vscode-thunder-client;
 
 echo -e '{ \n
 	"workbench.iconTheme": "vscode-icons",\n
