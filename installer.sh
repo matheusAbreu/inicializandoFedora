@@ -36,6 +36,9 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 echo 'Instalando drivers PostgreSQL Server 12';
 dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
 
+echo 'Instalando configurando o repo do pgadmin4';
+dnf install -yq pgadmin4-fedora-repo;
+
 echo 'Instalando programas via dnf';
 dnf install -yq transmission-gtk paper-icon-theme neofetch unrar \
                 unzip papirus-icon-theme code podman buildah rabbitvcs-nautilus postgresql-server postgresql-contrib \
