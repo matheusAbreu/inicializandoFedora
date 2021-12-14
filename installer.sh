@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+POSTGRES_VERSION=12
+
 dnf install -yq wget flatpak ;
 
 #add repos
@@ -33,8 +36,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 #echo 'Instalando drivers Nvidia';
 #dnf install -yq nvidia-driver nvidia-driver-libs.i686 nvidia-settings akmod-nvidia cuda nvidia-driver-cuda --allowerasing --best ;
 
-echo 'Instalando drivers PostgreSQL Server 12';
-dnf groupinstall -yq 'PostgreSQL Database Server 12 PGDG' --with-optional;
+echo 'Instalando drivers PostgreSQL Server $POSTGRES_VERSION';
+dnf groupinstall -yq 'PostgreSQL Database Server $POSTGRES_VERSION PGDG' --with-optional;
 
 echo 'Instalando configurando o repo do pgadmin4';
 dnf install -yq pgadmin4-fedora-repo;
@@ -52,7 +55,8 @@ dnf install -yq gnome-tweaks gnome-shell-extension-dash-to-dock gnome-shell-exte
 echo 'Startando o postgres';
 systemctl enable postgresql;
 systemctl start postgresql;
-postgresql-setup --initdb --unit postgresql;
+/usr/pgsql-$(POSTGRES_VERSION)/bin/postgresql-$(POSTGRES_VERSION)-setup initdb
+#postgresql-setup --initdb --unit postgresql;
 
 echo 'Configurando Java:';
 echo 1 | alternatives --config java;
