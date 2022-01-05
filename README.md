@@ -12,6 +12,10 @@ $ ./index.sh
 # Após a execução do script executar o comando abaixo, selecionar português(Brasil) e clicar em 'ok'.
 $ system-config-language
 ```
+### Habilitando WebRTC PipeWire support no Google Chrome
+
+Abra o navegador e na URL insira "chrome://flags/#enable-webrtc-pipewire-capturer" e mude a flag para enable ![exemplo](exemploWebRTCPipeWireSupportNoChrome.png)
+
 
 ### Configurando tema do bash
 
