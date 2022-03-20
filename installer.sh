@@ -43,7 +43,7 @@ echo 'Instalando configurando o repo do pgadmin4';
 dnf install -yq pgadmin4-fedora-repo;
 
 echo 'Instalando programas via dnf';
-dnf install -yq transmission-gtk paper-icon-theme neofetch unrar \
+dnf install -yq transmission-gtk paper-icon-theme neofetch ruby unrar \
                 wayland-utils waylandpp pipewire vulkan* xdg-desktop-portal-wlr \
                 unzip papirus-icon-theme code podman buildah rabbitvcs-nautilus postgresql-server postgresql-contrib \
                 java-1.8.0-open* java-11-open* stacer nano htop gparted fira-code-fonts flat-remix-theme \
