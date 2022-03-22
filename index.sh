@@ -87,6 +87,9 @@ echo -e '{ \n
 	 "workbench.colorTheme": "Ayu Mirage",\n
 	  "editor.fontFamily": "Fira Code Retina",\n
 	  "editor.formatOnType": true,\n
+		"editor.tabSize": 2,\n
+		"editor.insertSpaces": false,\n
+		"editor.formatOnType": true,\n
 	  "explorer.compactFolders": false,\n
 	  "editor.fontLigatures": true,\n
 	  "explorer.confirmDelete": false,\n

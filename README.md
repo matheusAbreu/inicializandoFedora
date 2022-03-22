@@ -39,17 +39,20 @@ Basta mudar o valor da variável yourTheme para o nome do tema que deseja, e o s
 
 ```json
 {
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Ayu Mirage",
-  "editor.fontFamily": "Fira Code Retina",
-  "editor.formatOnType": true,
-  "explorer.compactFolders": false,
-  "editor.fontLigatures": true,
-  "explorer.confirmDelete": false,
-  "editor.formatOnSave": true,
-  "prettier.eslintIntegration": true,
-  "prettier.singleQuote": true,
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Ayu Mirage",
+	"editor.fontFamily": "Fira Code Retina",
+	"editor.formatOnType": true,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.formatOnType": true,
+	"explorer.compactFolders": false,
+	"editor.fontLigatures": true,
+	"explorer.confirmDelete": false,
+	"editor.formatOnSave": true,
+	"prettier.eslintIntegration": true,
+	"prettier.singleQuote": true,
+	"[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }
 ```
 
