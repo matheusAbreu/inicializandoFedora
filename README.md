@@ -16,6 +16,12 @@ $ system-config-language
 
 Abra o navegador e na URL insira "chrome://flags/#enable-webrtc-pipewire-capturer" e mude a flag para enable ![exemplo](exemploWebRTCPipeWireSupportNoChrome.png)
 
+### Instalando as extensões do gnome
+- [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+- [Containers](https://extensions.gnome.org/extension/1500/containers/)
+- [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+- [User Theme](https://extensions.gnome.org/extension/19/user-themes/)
 
 ### Configurando tema do bash
 
