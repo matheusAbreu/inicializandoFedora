@@ -22,6 +22,7 @@ Abra o navegador e na URL insira "chrome://flags/#enable-webrtc-pipewire-capture
 - [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 - [User Theme](https://extensions.gnome.org/extension/19/user-themes/)
+- [Desktop Icons NG](https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/)
 
 ### Configurando tema do bash
 
