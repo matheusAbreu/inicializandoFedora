@@ -2,7 +2,7 @@
 
 NVM_VERSION='v0.39.5'
 GO_VERSION='1.21.0'
-POSTGRES_VERSION=14
+POSTGRES_VERSION='14'
 
 dnf install -yq wget flatpak ;
 
@@ -27,7 +27,7 @@ echo 'Instalando drivers PostgreSQL Server $POSTGRES_VERSION';
 dnf groupinstall -y 'PostgreSQL Database Server $POSTGRES_VERSION PGDG' --with-optional;
 
 echo 'Instalando programas via dnf';
-dnf install -y transmission-gtk paper-icon-theme neofetch unrar \
+dnf install -y transmission-gtk paper-icon-theme neofetch unrar google-chrome-stable intel-media-driver \
                 wayland-utils waylandpp pipewire vulkan* xdg-desktop-portal-wlr \
                 unzip papirus-icon-theme gh code podman buildah rabbitvcs-nautilus postgresql-server postgresql-contrib \
                 java-11-open* java-17-open* stacer nano htop gparted fira-code-fonts flat-remix-theme \
@@ -37,7 +37,7 @@ dnf install -y transmission-gtk paper-icon-theme neofetch unrar \
 echo 'Startando o postgres';
 systemctl enable postgresql;
 systemctl start postgresql;
-/usr/pgsql-$(POSTGRES_VERSION)/bin/postgresql-$(POSTGRES_VERSION)-setup initdb
+/usr/pgsql-$POSTGRES_VERSION/bin/postgresql-$POSTGRES_VERSION-setup initdb
 
 echo 'Configurando Java:';
 echo 1 | alternatives --config java;
@@ -51,12 +51,10 @@ echo 'Instalando programas via flatpak';
 flatpak install -y flathub com.spotify.Client;
 flatpak install -y flathub com.discordapp.Discord;
 flatpak install -y flathub org.telegram.desktop;
-flatpak install -y flathub com.simplenote.Simplenote;
 flatpak install -y flathub io.dbeaver.DBeaverCommunity;
 flatpak install -y flathub io.dbeaver.DBeaverCommunity.Client.pgsql;
 flatpak install -y flathub com.unity.UnityHub;
 flatpak install -y flathub com.jetbrains.IntelliJ-IDEA-Community;
-flatpak install -y flathub com.getpostman.Postman;
 
 echo 'Install NVM';
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh | bash
@@ -66,17 +64,6 @@ wget -c -t 3 https://go.dev/dl/go$GO_VERSION.linux-amd64.tar.gz;
 
 echo 'Install Go';
 tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz;
-
-echo 'Downloas do mega'
-wget -c -t 3 https://mega.nz/linux/MEGAsync/Fedora_$(rpm -E %fedora)/x86_64/megasync-Fedora_$(rpm -E %fedora).x86_64.rpm ;
-
-wget -c -t 3 https://mega.nz/linux/MEGAsync/Fedora_$(rpm -E %fedora)/x86_64/nautilus-megasync-Fedora_$(rpm -E %fedora).x86_64.rpm;
-
-echo 'Iniciando download de Google Chrome';
-wget -c -t 3 https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm;
-
-echo 'Instalando Mega e Google Chrome... ';
-dnf install -y megasync-Fedora_$(rpm -E %fedora).x86_64.rpm nautilus-megasync-Fedora_$(rpm -E %fedora).x86_64.rpm google-chrome-stable_current_x86_64.rpm; 
 
 
 echo 'Fim do Script Instalação ...';

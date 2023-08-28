@@ -60,17 +60,17 @@ export SCM_CHECK=true\n
 source "$BASH_IT"/bash_it.sh\n
 ';
 
-#por ser um processo mais rapido a instalação do bash vem antes da instalação dos pacotes
-echo 'Instalando Tema no bash';
-git clone https://github.com/Bash-it/bash-it.git $HOME/.bash-it/;
-chmod +x $HOME/.bash-it/install.sh;
-echo 'y' | sh $HOME/.bash-it/install.sh;
+# #por ser um processo mais rapido a instalação do bash vem antes da instalação dos pacotes
+# echo 'Instalando Tema no bash';
+# git clone https://github.com/Bash-it/bash-it.git $HOME/.bash-it/;
+# chmod +x $HOME/.bash-it/install.sh;
+# echo 'y' | sh $HOME/.bash-it/install.sh;
 
-echo -e $bashrc > $HOME/.bashrc ;
-sudo cp $HOME/.bashrc /root/.bashrc ;
+# echo -e $bashrc > $HOME/.bashrc ;
+# sudo cp $HOME/.bashrc /root/.bashrc ;
 
 
-sudo ./installer.sh;
+# sudo ./installer.sh;
 
 echo 'Autenticando no github';
 gh auth login -w -p https ;

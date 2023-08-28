@@ -7,16 +7,18 @@ Ele é bem pessoal, então sugiro que antes de rodar dê um molhada no que ele i
 
 ```shell
 # Executar sem superusuario. O script esta encarregado de elevar-se (Por isso fica atento, ele pedirá senha)
-$ ./index.sh
+$ ./main.sh
 
 # Após a execução do script executar o comando abaixo, selecionar português(Brasil) e clicar em 'ok'.
 $ system-config-language
 ```
+
 ### Habilitando WebRTC PipeWire support no Google Chrome
 
 Abra o navegador e na URL insira "chrome://flags/#enable-webrtc-pipewire-capturer" e mude a flag para enable ![exemplo](exemploWebRTCPipeWireSupportNoChrome.png)
 
 ### Instalando as extensões do gnome
+
 - [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 - [Containers](https://extensions.gnome.org/extension/1500/containers/)
 - [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
@@ -46,20 +48,20 @@ Basta mudar o valor da variável yourTheme para o nome do tema que deseja, e o s
 
 ```json
 {
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Ayu Mirage",
-	"editor.fontFamily": "Fira Code Retina",
-	"editor.formatOnType": true,
-	"editor.tabSize": 2,
-	"editor.insertSpaces": false,
-	"editor.formatOnType": true,
-	"explorer.compactFolders": false,
-	"editor.fontLigatures": true,
-	"explorer.confirmDelete": false,
-	"editor.formatOnSave": true,
-	"prettier.eslintIntegration": true,
-	"prettier.singleQuote": true,
-	"[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Ayu Mirage",
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.formatOnType": true,
+  "explorer.compactFolders": false,
+  "editor.fontLigatures": true,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }
 ```
 
