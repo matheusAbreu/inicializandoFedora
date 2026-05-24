@@ -88,6 +88,9 @@ code --install-extension ms-dotnettools.vscode-dotnet-runtime;
 code --install-extension ms-dotnettools.csharp;
 code --install-extension ms-dotnettools.csdevkit;
 code --install-extension ms-dotnettools.vscodeintellicode-csharp;
+code --install-extension vscode-icons-team.vscode-icons;
+code --install-extension fwcd.kotlin;
+code --install-extension jetbrains.kotlin-server;
 
 echo -e '{ \n
 	"workbench.iconTheme": "vscode-icons",\n
